@@ -1,0 +1,13 @@
+using Microsoft.AspNetCore.Mvc;
+
+namespace SampleWebApp.Controllers
+{
+    public class HomeController : Controller
+    {
+        public IActionResult Index()
+        {
+            ViewData["Message"] = "Welcome to SampleWebApp! This is a simple .NET MVC application.";
+            return View();
+        }
+    }
+}
